@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  background: #ccc;
+}
+
+.menu-col {
+  background: #fff;
+  border-radius: 0 10px 10px 0;
+  padding: 15px;
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.dot--orange {
+  background: orange;
+}
+
+.dot--gold {
+  background: gold;
+}
+
+.dot--green {
+  background: green;
+}
+/* Logo */
+.logo-block {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  opacity: 0.8;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 5px;
+  color: #020432;
+}
+
+.categories {
+  margin-top: 22px;
+}
+
+.categories__name {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #594d5b;
+}
+
+.categories__option-list {
+  padding: 15px 10px 8px;
+}
+
+.categories__option-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.categories__option-item + .categories__option-item {
+  margin-top: 20px;
+}
+
+.categories__option-name {
+  color: #232023;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.settings {
+  color: #1338bf;
+}
+
+.projects-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 16px;
+  border-radius: 99px;
+  background: #ddd;
+}
+
+.current-projects {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.icon {
+  color: #333;
+}
+
+.categories__option-name:hover,
+.icon:hover {
+  cursor: pointer;
+}
+
+.settings-color {
+  color: #1338bf;
+}
+
+.setting-btn {
+  padding: 7px 10px;
+  border-radius: 4px;
+  background: #ddd;
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+
+.user {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 15px;
+  border-top: 1px solid #ccc;
+}
+
+.user__avt {
+  width: 33px;
+  height: 33px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user__name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.user__email {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.user__dots {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  margin-left: auto;
+}
+
+@media only screen and (min-width: 20em) and (max-width: 47.4375em) {
+  .categories {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .categories__name {
+    font-size: 1rem;
+  }
+
+  .logo,
+  .user__avt,
+  .setting-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .brand-name,
+  .categories__option-name,
+  .projects-status,
+  .user__info,
+  .user__dots {
+    display: none;
+  }
+
+  .setting-btn {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .user__avt:hover {
+    cursor: pointer;
+  }
+}

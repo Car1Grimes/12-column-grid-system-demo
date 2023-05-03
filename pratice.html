@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Reset Css -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- Grid system -->
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.4.0-web/css/all.min.css"
+    />
+    <!-- Page styles -->
+    <link rel="stylesheet" href="./assets/css/practice.css" />
+    <!-- Embeded fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="grid wide">
+      <div class="row">
+        <div class="menu-col col col-s-3 col-m-3 col-l-3 col-xl-3">
+          <div class="menu-container">
+            <div class="dots">
+              <div class="dot dot--orange"></div>
+              <div class="dot dot--gold"></div>
+              <div class="dot dot--green"></div>
+            </div>
+            <div class="logo-block">
+              <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                  <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M264.5 5.2c14.9-6.9 32.1-6.9 47 0l218.6 101c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 149.8C37.4 145.8 32 137.3 32 128s5.4-17.9 13.9-21.8L264.5 5.2zM476.9 209.6l53.2 24.6c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 277.8C37.4 273.8 32 265.3 32 256s5.4-17.9 13.9-21.8l53.2-24.6 152 70.2c23.4 10.8 50.4 10.8 73.8 0l152-70.2zm-152 198.2l152-70.2 53.2 24.6c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 405.8C37.4 401.8 32 393.3 32 384s5.4-17.9 13.9-21.8l53.2-24.6 152 70.2c23.4 10.8 50.4 10.8 73.8 0z"
+                  />
+                </svg>
+              </div>
+              <h1 class="brand-name">Untitled UI</h1>
+            </div>
+            <div class="categories-container">
+              <div class="categories">
+                <h2 class="categories__name">Dashboard</h2>
+                <ul class="categories__option-list">
+                  <li class="categories__option-item">
+                    <i class="icon fa-solid fa-house-user fa-xs"></i>
+                    <h3 class="categories__option-name">Overview</h3>
+                  </li>
+                  <li class="categories__option-item">
+                    <i class="icon fa-solid fa-table-cells-large"></i>
+                    <h3 class="categories__option-name">Current Projects</h3>
+                    <div class="projects-status">
+                      <span class="current-projects">10</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="categories">
+                <h2 class="categories__name">Editor</h2>
+                <ul class="categories__option-list">
+                  <li class="categories__option-item">
+                    <i class="icon fa-solid fa-circle-half-stroke"></i>
+                    <h3 class="categories__option-name">Designer</h3>
+                  </li>
+                  <li class="categories__option-item">
+                    <i class="icon fa-solid fa-wand-magic-sparkles"></i>
+                    <h3 class="categories__option-name">Magic Build</h3>
+                  </li>
+                  <li class="categories__option-item">
+                    <i class="icon fa-solid fa-palette"></i>
+                    <h3 class="categories__option-name">Color System</h3>
+                  </li>
+                  <li class="categories__option-item">
+                    <i class="icon fa-regular fa-folder-open"></i>
+                    <h3 class="categories__option-name">Current Projects</h3>
+                  </li>
+                  <li class="categories__option-item">
+                    <i class="icon fa-solid fa-cloud-arrow-up"></i>
+                    <h3 class="categories__option-name">Upload new</h3>
+                  </li>
+                </ul>
+              </div>
+              <div class="categories">
+                <h2 class="categories__name">Reports</h2>
+                <ul class="categories__option-list">
+                  <li class="categories__option-item">
+                    <i class="icon fa-solid fa-chart-column"></i>
+                    <h3 class="categories__option-name">Overview</h3>
+                  </li>
+                  <li class="categories__option-item">
+                    <i class="icon fa-solid fa-clock"></i>
+                    <h3 class="categories__option-name">Scheduled reports</h3>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="setting-btn categories__option-item">
+              <i class="icon settings-color fa-solid fa-gear"></i>
+              <h3 class="categories__option-name settings">Settings</h3>
+            </div>
+            <div class="user">
+              <img src="./assets/images/avt-3.jpg" alt="" class="user__avt" />
+              <div class="user__info">
+                <p class="user__name">Frankie Sullivan</p>
+                <p class="user__email">frankie@untitledui.com</p>
+              </div>
+              <div class="user__dots">
+                <i class="icon fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-s-9 col-m-9 col-l-9 col-xl-9">
+          <div class="main-content">
+            <h1>Main content</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
