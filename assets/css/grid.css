@@ -69,7 +69,39 @@
   flex: 0 0 100%;
   max-width: 100%;
 }
-
+.s-o-1 {
+  margin-left: 8.33%;
+}
+.s-o-2 {
+  margin-left: 16.66%;
+}
+.s-o-3 {
+  margin-left: 25%;
+}
+.s-o-4 {
+  margin-left: 33.33%;
+}
+.s-o-5 {
+  margin-left: 41.66%;
+}
+.s-o-6 {
+  margin-left: 50%;
+}
+.s-o-7 {
+  margin-left: 58.33%;
+}
+.s-o-8 {
+  margin-left: 66.66%;
+}
+.s-o-9 {
+  margin-left: 75%;
+}
+.s-o-10 {
+  margin-left: 83.33%;
+}
+.s-o-11 {
+  margin-left: 91.66%;
+}
 /* PC Large Screens */
 @media (min-width: 77.5em) {
   .wide {
@@ -132,6 +164,39 @@
   .col-xl-12 {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .xl-o-1 {
+    margin-left: 8.33%;
+  }
+  .xl-o-2 {
+    margin-left: 16.66%;
+  }
+  .xl-o-3 {
+    margin-left: 25%;
+  }
+  .xl-o-4 {
+    margin-left: 33.33%;
+  }
+  .xl-o-5 {
+    margin-left: 41.66%;
+  }
+  .xl-o-6 {
+    margin-left: 50%;
+  }
+  .xl-o-7 {
+    margin-left: 58.33%;
+  }
+  .xl-o-8 {
+    margin-left: 66.66%;
+  }
+  .xl-o-9 {
+    margin-left: 75%;
+  }
+  .xl-o-10 {
+    margin-left: 83.33%;
+  }
+  .xl-o-11 {
+    margin-left: 91.66%;
   }
 }
 
@@ -198,6 +263,39 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .l-o-1 {
+    margin-left: 8.33%;
+  }
+  .l-o-2 {
+    margin-left: 16.66%;
+  }
+  .l-o-3 {
+    margin-left: 25%;
+  }
+  .l-o-4 {
+    margin-left: 33.33%;
+  }
+  .l-o-5 {
+    margin-left: 41.66%;
+  }
+  .l-o-6 {
+    margin-left: 50%;
+  }
+  .l-o-7 {
+    margin-left: 58.33%;
+  }
+  .l-o-8 {
+    margin-left: 66.66%;
+  }
+  .l-o-9 {
+    margin-left: 75%;
+  }
+  .l-o-10 {
+    margin-left: 83.33%;
+  }
+  .l-o-11 {
+    margin-left: 91.66%;
+  }
 }
 
 /* Tablet resolution */
@@ -262,5 +360,38 @@
   .col-m-12 {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .m-o-1 {
+    margin-left: 8.33%;
+  }
+  .m-o-2 {
+    margin-left: 16.66%;
+  }
+  .m-o-3 {
+    margin-left: 25%;
+  }
+  .m-o-4 {
+    margin-left: 33.33%;
+  }
+  .m-o-5 {
+    margin-left: 41.66%;
+  }
+  .m-o-6 {
+    margin-left: 50%;
+  }
+  .m-o-7 {
+    margin-left: 58.33%;
+  }
+  .m-o-8 {
+    margin-left: 66.66%;
+  }
+  .m-o-9 {
+    margin-left: 75%;
+  }
+  .m-o-10 {
+    margin-left: 83.33%;
+  }
+  .m-o-11 {
+    margin-left: 91.66%;
   }
 }

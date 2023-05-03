@@ -18,6 +18,10 @@ body {
   padding: 15px;
 }
 
+.main-content {
+  background: antiquewhite;
+}
+
 .dots {
   display: flex;
   gap: 6px;
