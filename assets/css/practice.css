@@ -364,6 +364,7 @@ a {
   flex-direction: column;
   position: relative;
   background: lightpink;
+  margin-bottom: 100px;
 }
 
 .modal__title {
