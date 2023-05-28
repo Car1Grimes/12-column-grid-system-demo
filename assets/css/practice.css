@@ -426,7 +426,7 @@ a {
   justify-content: center;
   flex-direction: column;
 
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .questions__title {
