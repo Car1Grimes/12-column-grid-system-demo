@@ -20,106 +20,252 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <div class="grid wide">
-      <div class="row">
-        <div
-          class="menu-col col col-s-3 col-m-3 col-l-3 col-xl-3 s-o-9 m-o-9 l-o-9 xl-o-9"
-        >
-          <div class="menu-container">
-            <div class="dots">
-              <div class="dot dot--orange"></div>
-              <div class="dot dot--gold"></div>
-              <div class="dot dot--green"></div>
-            </div>
-            <div class="logo-block">
-              <div class="logo">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                  <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                  <path
-                    d="M264.5 5.2c14.9-6.9 32.1-6.9 47 0l218.6 101c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 149.8C37.4 145.8 32 137.3 32 128s5.4-17.9 13.9-21.8L264.5 5.2zM476.9 209.6l53.2 24.6c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 277.8C37.4 273.8 32 265.3 32 256s5.4-17.9 13.9-21.8l53.2-24.6 152 70.2c23.4 10.8 50.4 10.8 73.8 0l152-70.2zm-152 198.2l152-70.2 53.2 24.6c8.5 3.9 13.9 12.4 13.9 21.8s-5.4 17.9-13.9 21.8l-218.6 101c-14.9 6.9-32.1 6.9-47 0L45.9 405.8C37.4 401.8 32 393.3 32 384s5.4-17.9 13.9-21.8l53.2-24.6 152 70.2c23.4 10.8 50.4 10.8 73.8 0z"
-                  />
-                </svg>
-              </div>
-              <h1 class="brand-name">Untitled UI</h1>
-            </div>
-            <div class="categories-container">
-              <div class="categories">
-                <h2 class="categories__name">Dashboard</h2>
-                <ul class="categories__option-list">
-                  <li class="categories__option-item">
-                    <i class="icon fa-solid fa-house-user fa-xs"></i>
-                    <h3 class="categories__option-name">Overview</h3>
-                  </li>
-                  <li class="categories__option-item">
-                    <i class="icon fa-solid fa-table-cells-large"></i>
-                    <h3 class="categories__option-name">Current Projects</h3>
-                    <div class="projects-status">
-                      <span class="current-projects">10</span>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="categories">
-                <h2 class="categories__name">Editor</h2>
-                <ul class="categories__option-list">
-                  <li class="categories__option-item">
-                    <i class="icon fa-solid fa-circle-half-stroke"></i>
-                    <h3 class="categories__option-name">Designer</h3>
-                  </li>
-                  <li class="categories__option-item">
-                    <i class="icon fa-solid fa-wand-magic-sparkles"></i>
-                    <h3 class="categories__option-name">Magic Build</h3>
-                  </li>
-                  <li class="categories__option-item">
-                    <i class="icon fa-solid fa-palette"></i>
-                    <h3 class="categories__option-name">Color System</h3>
-                  </li>
-                  <li class="categories__option-item">
-                    <i class="icon fa-regular fa-folder-open"></i>
-                    <h3 class="categories__option-name">Current Projects</h3>
-                  </li>
-                  <li class="categories__option-item">
-                    <i class="icon fa-solid fa-cloud-arrow-up"></i>
-                    <h3 class="categories__option-name">Upload new</h3>
-                  </li>
-                </ul>
-              </div>
-              <div class="categories">
-                <h2 class="categories__name">Reports</h2>
-                <ul class="categories__option-list">
-                  <li class="categories__option-item">
-                    <i class="icon fa-solid fa-chart-column"></i>
-                    <h3 class="categories__option-name">Overview</h3>
-                  </li>
-                  <li class="categories__option-item">
-                    <i class="icon fa-solid fa-clock"></i>
-                    <h3 class="categories__option-name">Scheduled reports</h3>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="setting-btn categories__option-item">
-              <i class="icon settings-color fa-solid fa-gear"></i>
-              <h3 class="categories__option-name settings">Settings</h3>
-            </div>
-            <div class="user">
-              <img src="./assets/images/avt-3.jpg" alt="" class="user__avt" />
-              <div class="user__info">
-                <p class="user__name">Frankie Sullivan</p>
-                <p class="user__email">frankie@untitledui.com</p>
-              </div>
-              <div class="user__dots">
-                <i class="icon fa-solid fa-ellipsis-vertical"></i>
-              </div>
-            </div>
+    <header class="header">
+      <h1 class="title">Projects compilation.</h1>
+      <ul class="menu">
+        <li>
+          <a class="project" href="#color-flipper">1. Color Flipper</a>
+        </li>
+        <li>
+          <a class="project" href="#counter">2. Counter</a>
+        </li>
+        <li>
+          <a class="project" href="#reviews">3. Reviews</a>
+        </li>
+        <li>
+          <a class="project" href="#sidebar">4. Side Bar</a>
+        </li>
+        <li>
+          <a class="project" href="#modal-overlay">5. Modal Overlay</a>
+        </li>
+        <li>
+          <a class="project" href="#questions">6. Frequently Asked Questions</a>
+        </li>
+        <li>
+          <a href="#menu" class="project">7. Menu</a>
+        </li>
+      </ul>
+    </header>
+    <main class="main">
+      <article class="element" id="color-flipper">
+        <nav class="color-flipper__nav">
+          <h2 class="section__title">color flipper</h2>
+          <ul class="color-type">
+            <li>
+              <a class="color__option" href="#!">simple</a>
+            </li>
+            <li>
+              <a class="color__option" href="#!">hex</a>
+            </li>
+          </ul>
+        </nav>
+        <div id="color-flipper__content">
+          <h3 id="color-flipper__color-wrap">
+            Background color: <span id="color-flipper__color">#fff</span>
+          </h3>
+          <button class="btn" id="color-flipper__btn">Change color</button>
+        </div>
+        <script src="./assets/javascript_files/color-flipper.js"></script>
+      </article>
+      <article class="element" id="counter">
+        <h2 class="counter__title">Counter</h2>
+        <span class="counter__performer">0</span>
+        <div class="btns">
+          <button class="btn counter__btn decrease">DECREASE</button>
+          <button class="btn counter__btn reset">RESET</button>
+          <button class="btn counter__btn increase">INCREASE</button>
+        </div>
+        <script src="./assets/javascript_files/counter.js"></script>
+      </article>
+      <article class="element" id="reviews">
+        <h2 class="reviews__title">Our reviews</h2>
+        <div class="reviews__container col col-s-5 col-m-5 col-l-5 col-xl-5">
+          <img alt="" class="reviewer" />
+          <h3 class="reviewer__name"></h3>
+          <p class="reviewer__job"></p>
+          <p class="reviewer__saying"></p>
+          <div class="chevron-btns">
+            <button class="chevron-left">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="chevron-right">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
           </div>
         </div>
-      </div>
-    </div>
+        <script src="./assets/javascript_files/reviews.js"></script>
+      </article>
+      <article class="element" id="sidebar">
+        <aside class="sidebar col col-s-12 col-m-6 col-l-4 col-xl-3">
+          <a href="#!">
+            <img
+              src="./assets/images/discord-logo.svg"
+              alt=""
+              class="sidebar__logo"
+            />
+          </a>
+          <div class="close-btn">
+            <i class="fa-solid fa-xmark fa-2xl"></i>
+          </div>
+          <ul class="sidebar__menu-list">
+            <li>
+              <a href="#!" class="menu__item">Home</a>
+            </li>
+            <li>
+              <a href="#!" class="menu__item">Services</a>
+            </li>
+            <li>
+              <a href="#!" class="menu__item">Community</a>
+            </li>
+            <li>
+              <a href="#!" class="menu__item">Forum</a>
+            </li>
+            <li>
+              <a href="#!" class="menu__item">Servers</a>
+            </li>
+          </ul>
+          <ul class="sidebar__socials">
+            <li>
+              <a href="#!" class="social__link">
+                <i class="fa-brands fa-facebook" style="color: #2d2020"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="social__link">
+                <i class="fa-brands fa-twitter" style="color: #2d2020"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="social__link">
+                <i class="fa-brands fa-github" style="color: #2d2020"></i>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <div class="control-btn">
+          <i class="fa-solid fa-bars fa-2xl"></i>
+        </div>
+        <p class="sidebar__text">
+          <span class="sidebar__text--bold"
+            >Tip: To maximize your experience,</span
+          >
+          resize the screen to see different behaviours.
+        </p>
+        <script src="./assets/javascript_files/sidebar.js"></script>
+      </article>
+      <article class="element" id="modal-overlay">
+        <h2 class="modal__title">Modal Overlay</h2>
+        <button class="modal-btn">View message!</button>
+
+        <div class="modal-container"></div>
+        <div class="modal__message col col-s-8 col-m-6 col-l-5 col-xl-4">
+          <p class="modal__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+            pariatur consectetur aliquam ipsum. Totam placeat, itaque tempora
+            ratione vel ea? Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Expedita pariatur consectetur aliquam ipsum. Totam placeat,
+            itaque tempora ratione vel ea? Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Expedita pariatur consectetur aliquam
+            ipsum. Totam placeat, itaque tempora ratione vel ea?
+          </p>
+          <div class="close-btn close-overlay">
+            <i class="fa-solid fa-xmark fa-2xl"></i>
+          </div>
+        </div>
+        <script src="./assets/javascript_files/modal-overlay.js"></script>
+      </article>
+      <article class="" id="questions">
+        <h2 class="questions__title">Frequently Asked Questions</h2>
+        <section class="questions col col-s-12 col-m-8 col-l-6 col-xl-6">
+          <article class="single-question">
+            <div class="question__body">
+              <h3 class="question__content">
+                What is HTML, CSS and Javascript?
+              </h3>
+              <button class="question-btn plus-sign">
+                <i class="fa-solid fa-plus fa-xl"></i>
+              </button>
+              <button class="question-btn minus-sign">
+                <i class="fa-solid fa-minus fa-xl"></i>
+              </button>
+            </div>
+            <div class="answer">
+              <p class="answer__content">
+                HTML is the structure of a house, CSS is the interior and
+                exterior decor, and JavaScript is the electricity, water system,
+                and many other functional features that make the house livable.
+              </p>
+            </div>
+          </article>
+          <article class="single-question">
+            <div class="question__body">
+              <h3 class="question__content">
+                What is the difference between Front-end and Back-end
+                Developers?
+              </h3>
+              <button class="question-btn plus-sign">
+                <i class="fa-solid fa-plus fa-xl"></i>
+              </button>
+              <button class="question-btn minus-sign">
+                <i class="fa-solid fa-minus fa-xl"></i>
+              </button>
+            </div>
+            <div class="answer">
+              <p class="answer__content">
+                Front-end refers to the
+                <b class="bold">user interface</b>, while back-end refers to the
+                <b class="bold">server, application, and database</b> that work
+                behind the scenes to deliver information to the user from behind
+                the scenes.
+              </p>
+            </div>
+          </article>
+          <article class="single-question">
+            <div class="question__body">
+              <h3 class="question__content">
+                How much do developers in VietNam earn on average?
+              </h3>
+              <button class="question-btn plus-sign">
+                <i class="fa-solid fa-plus fa-xl"></i>
+              </button>
+              <button class="question-btn minus-sign">
+                <i class="fa-solid fa-minus fa-xl"></i>
+              </button>
+            </div>
+            <div class="answer">
+              <p class="answer__content">
+                A person working in Developers and Programmers in Vietnam
+                typically earns around
+                <b class="bold">15,800,000 VND</b> per month. Salaries range
+                from 12,800,000 VND (lowest average) to
+                <b class="bold">21,800,000 VND</b> (highest average, actual
+                maximum salary is higher).
+              </p>
+            </div>
+          </article>
+        </section>
+        <script src="./assets/javascript_files/questions.js"></script>
+      </article>
+      <!-- <article id="menu">
+        <h2 class="menu__title">menu</h2>
+        
+        <div class="menu__btn-container">
+          <button class="menu__btn" type="button">all</button>
+          <button class="menu__btn" type="button">breakfast</button>
+          <button class="menu__btn" type="button">lunch</button>
+          <button class="menu__btn" type="button">shakes</button>
+        </div>
+        
+        <section class="menu__display">
+          <div class="menu-item"></div>
+        </section>
+        <script src="./assets/javascript_files/menu.js"></script>
+      </article> -->
+    </main>
   </body>
 </html>
