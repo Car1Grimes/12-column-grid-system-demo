@@ -72,3 +72,65 @@ const menu = [
     desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
   },
 ];
+
+const menuDisplay = document.querySelector(".menu__display");
+const menuBtns = document.querySelector(".menu__categories");
+
+window.addEventListener("DOMContentLoaded", function () {
+  showMenuItems(menu);
+  showMenuCategories();
+});
+
+function showMenuItems(items) {
+  const menuItems = items
+    .map(function (item) {
+      return `<div class="menu-item">
+              <img src="./assets/images/item-1" alt="" class="item__img" />
+              <div class="item__info">
+                <div class="item__heading">
+                  <h3 class="item__name">${item.title}</h3>
+                  <span class="item__price">$${item.price}</span>
+                </div>
+                <p class="item__desc">${item.desc}</p>
+              </div>
+            </div>`;
+    })
+    .join("");
+  menuDisplay.innerHTML = menuItems;
+}
+
+function showMenuCategories() {
+  const categoryList = menu.reduce(
+    function (categories, item) {
+      if (!categories.includes(item.category)) {
+        categories.push(item.category);
+      }
+      return categories;
+    },
+    ["all"]
+  );
+  const categoryBtns = categoryList
+    .map(function (category) {
+      return `<button type="button" class="menu__category" data-id="${category}">
+              ${category}
+            </button>`;
+    })
+    .join("");
+  menuBtns.innerHTML = categoryBtns;
+  const categories = document.querySelectorAll(".menu__category");
+  categories.forEach(function (category) {
+    category.addEventListener("click", function (e) {
+      const currentBtn = e.target.dataset.id;
+      const filterItems = menu.filter(function (item) {
+        if (currentBtn === item.category) {
+          return item;
+        }
+      });
+      if (currentBtn === "all") {
+        showMenuItems(menu);
+      } else {
+        showMenuItems(filterItems);
+      }
+    });
+  });
+}
